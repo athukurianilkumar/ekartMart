@@ -14,6 +14,8 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { SearchlocationsComponent } from './header/searchlocations/searchlocations.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -29,12 +31,14 @@ import { FilterComponent } from './container/product-list/filter/filter.componen
     SearchlocationsComponent,
     ProductComponent,
     FilterComponent,
+    HomeComponent,
+    AboutComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
