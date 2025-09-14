@@ -1,0 +1,31 @@
+<div>
+    <div class="ekart--header">
+        <div class="ekart-logo">
+            ekart
+            <!-- <img src="image/logo.jpg" alt="ekart logo"> -->
+        </div>
+        <main-menu></main-menu>
+
+        <div style="height: inherit; display: flex; flex-direction: column;">
+            <div style="height: inherit;">
+                <top-menu style="height: inherit;"></top-menu>
+            </div>
+            <div>
+                <div class="location-wrapper">
+                    <div class="location-box">
+                        <span class="icon"></span>
+                        <input type="text" [(ngModel)]="searchText" placeholder="Search location..." maxlength="10" />
+                    </div>
+                </div>
+                <!-- Suggestions dropdown -->
+                <ul class="suggestions" *ngIf="filteredLocations.length > 0">
+                    <li *ngFor="let loc of filteredLocations">
+                        {{ loc }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</div>

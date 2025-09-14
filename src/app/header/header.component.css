@@ -1,0 +1,107 @@
+.ekart--header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #E5E4E2 1.5px solid;
+}
+
+.ekart-logo {
+    padding: 1.2vh 8vh;
+    font-size: 40px;
+    font-weight: bold;
+    color: #36454F;
+    font-family: 'Concert One', cursive;
+    width: 20%;
+}
+
+.ekart--header--nav {
+    width: 80%;
+    padding: 1vh 2vh;
+    font-size: 12px;
+}
+
+.ekart--bottom--bar {
+    display: flex;
+}
+
+.ekart--search-bar {
+    position: relative;
+    display: inline-block;
+}
+
+
+.btn {
+    padding: 15px 25px;
+    border: none;
+    margin: 10px 0px;
+}
+
+.btn-primary {
+    background-color: #282828;
+    color: white;
+}
+
+.location-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional, works if wrapper has height */
+  padding: 20px;
+}
+
+.location-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  width: 60%;
+  max-width: 400px;
+  background: #fafafa;
+}
+
+
+/* Icon */
+.location-box .icon {
+  width: 24px;
+  height: 24px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>') no-repeat center;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+/* Input */
+.location-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+
+.suggestions {
+  list-style: none;
+  margin: 8px 0 0; 
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  width: 100%;              
+  max-width: 390px;        
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.suggestions li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #f0f0f0;
+}
+

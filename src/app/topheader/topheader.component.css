@@ -1,0 +1,10 @@
+.ekart--top-header {
+    height: 5vh;
+    background-color: #28282B;
+    display: flex;
+    align-items: center;   /* vertical center */
+    justify-content: center; /* horizontal center */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+.ekart--top--bar {
+    text-align: right;   /* or remove if using flexbox */
+    padding: 3px 30px 0 0;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ekart--top--bar a {
+    text-decoration: none;
+    padding: 0 10px;
+    color: #36454F;
+    font-weight: 500;
+}

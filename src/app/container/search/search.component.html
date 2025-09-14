@@ -1,0 +1,10 @@
+<div class="ekart--search--product">
+    <input type="text" class="ekart-search-product-input" placeholder="Search for products..."
+        aria-label="Search products" [value]="searchText" (input)="updateSearchText($event)">
+    <button [ngClass]="{'btn' : true,'btn-search': searchText , 'btn-search-disabled' : !searchText}"
+        [disabled]="!searchText">Search</button>
+</div>
+
+<div class="ekart-search-result-for">
+    <p *ngIf="searchText != '' "><strong>Search result for: </strong>{{ searchText }}</p>
+</div>
