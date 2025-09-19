@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component , Output } from '@angular/core';
+
 
 @Component({
   selector: 'product-list',
@@ -535,6 +536,10 @@ export class ProductListComponent {
       slug: "michael-feburary-sk8-hi"
     }
   ];
+
+  // Event emitter to send products to parent
+  // @Output()
+  // productsChange = new EventEmitter<products[]>();
 
   totalProductCount = this.products.length;
   totalProductInStock = this.products.filter(p => p.is_in_inventory === true).length;

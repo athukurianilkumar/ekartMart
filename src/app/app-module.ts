@@ -14,7 +14,6 @@ import { ProductListComponent } from './container/product-list/product-list.comp
 import { SearchlocationsComponent } from './header/searchlocations/searchlocations.component';
 import { ProductComponent } from './container/product-list/product/product.component';
 import { FilterComponent } from './container/product-list/filter/filter.component';
-import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 
 
@@ -31,7 +30,6 @@ import { AboutComponent } from './about/about.component';
     SearchlocationsComponent,
     ProductComponent,
     FilterComponent,
-    HomeComponent,
     AboutComponent,
   
   ],

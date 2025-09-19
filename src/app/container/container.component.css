@@ -1,5 +1,29 @@
-.ekart--product--container{
-    margin: 20px auto;
-    padding: 0px 20vh;
-
+.ekart--layout {
+  display: flex;
+  min-height: 100vh; /* Full screen height */
 }
+
+.ekart--menu {
+  width: 20%;             /* Menu takes 20% of the width */
+  background: #f4f4f4;    /* Light gray background for menu */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ekart--product--container {
+  display: flex;
+  width: 100%;
+}
+
+.left-panel {
+  width: 20%;
+  padding: 10px;
+  background: #f8f9fa; /* optional for visibility */
+}
+
+.right-panel {
+  width: 80%;
+  padding: 10px;
+  background: #ffffff; /* optional */
+}
+

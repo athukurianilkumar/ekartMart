@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'main-menu',
   standalone: false,
@@ -13,8 +14,8 @@ export class MainMenuComponent {
 
   }
 
-  aboutBtn(){
-  this.router.navigate(['/about']);
-}
+  aboutBtn() {
+    this.router.navigate(['/about']);
+  }
 }
 

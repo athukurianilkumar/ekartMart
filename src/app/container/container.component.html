@@ -1,5 +1,13 @@
 <div class="ekart--product--container">
-    <app-search></app-search>
+  <div class="left-panel">
+    
+    <app-filter></app-filter>
+   <!-- <app-filter [all]="totalProductCount" [inStock]="totalProductInStock" [outOfStock]="totalProductOutOfStock"
+  (selectedFilterRadioBtnChanged)="onFilterChanged($event)"></app-filter> -->
+  </div>
+
+  <div class="right-panel">
+     <app-search></app-search>
     <product-list></product-list>
-    <!-- Your product listing goes here -->
+  </div>
 </div>
